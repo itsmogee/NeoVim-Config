@@ -22,13 +22,15 @@ return {
           noignore = false,
         })
       end,
+      desc = "Find files",
     },
     {
-      ";r",
+      ";g",
       function()
         local builtin = require("telescope.builtin")
         builtin.live_grep({})
       end,
+      desc = "Live grep",
     },
     {
       "\\\\",
@@ -36,6 +38,7 @@ return {
         local builtin = require("telescope.builtin")
         builtin.buffers()
       end,
+      desc = "Show all open buffer",
     },
     {
       ";t",
@@ -43,6 +46,7 @@ return {
         local builtin = require("telescope.builtin")
         builtin.help_tags()
       end,
+      desc = "Show all help tags",
     },
     {
       ";;",
@@ -50,6 +54,7 @@ return {
         local builtin = require("telescope.builtin")
         builtin.resume()
       end,
+      desc = "Resume previous picker",
     },
     {
       ";e",
@@ -57,6 +62,7 @@ return {
         local builtin = require("telescope.builtin")
         builtin.diagnostics()
       end,
+      desc = "Show document diagnostics",
     },
     {
       ";s",
@@ -64,6 +70,15 @@ return {
         local builtin = require("telescope.builtin")
         builtin.treesitter()
       end,
+      desc = "Show Treesitter symbols",
+    },
+    {
+      ";n",
+      function()
+        local utils = require("telescope").extensions.notify
+        utils.notify()
+      end,
+      desc = "Notifications",
     },
     {
       "sf",
