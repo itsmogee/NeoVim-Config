@@ -33,10 +33,16 @@ opt.autoindent = true
 -- search and replace settings
 opt.ignorecase = true
 opt.smartcase = true
+opt.signcolumn = "yes" -- show sign column so that text doesn't shift
 
 -- appearance
 opt.termguicolors = true
 opt.cursorline = true
+
+opt.signcolumn = "yes" -- show sign column so that text doesn't shift
+
+-- clipboard
+opt.clipboard:append("unnamedplus") -- use system clipboard as default register
 
 -- Remove squiggly lines
 opt.fillchars:append({ eob = " " })
