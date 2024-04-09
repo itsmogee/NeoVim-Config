@@ -19,6 +19,7 @@ return {
         "gomod",
         "html",
         "http",
+        "java",
         "javascript",
         "json",
         "lua",

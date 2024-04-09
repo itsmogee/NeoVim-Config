@@ -17,3 +17,26 @@
 -- vim.g.terminal_color_13 = "#1298ff"
 -- vim.g.terminal_color_14 = "#98cf28"
 -- vim.g.terminal_color_15 = "#58fad6"
+local opt = vim.opt
+
+-- line numbers
+opt.relativenumber = true
+opt.number = true
+
+-- tabs and indentation
+opt.tabstop = 2
+opt.shiftwidth = 2
+opt.softtabstop = 2
+opt.expandtab = true
+opt.autoindent = true
+
+-- search and replace settings
+opt.ignorecase = true
+opt.smartcase = true
+
+-- appearance
+opt.termguicolors = true
+opt.cursorline = true
+
+-- Remove squiggly lines
+opt.fillchars:append({ eob = " " })
